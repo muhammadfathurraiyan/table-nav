@@ -90,7 +90,7 @@ const Table = ({ users }) => {
                 </thead>
                 <tbody>
                 {users.slice(indexAwal, indexAkhir).map((user) => (
-                  <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <tr key={user.index} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                       <td className="px-6 py-4">
                         { user.index }
                       </td>
