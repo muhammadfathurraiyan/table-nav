@@ -30,9 +30,10 @@ const App = () => {
   
   if (users.length === 0) {
     return(
-      <div className='pt-24 '>
-        <h2 className='text-4xl text-gray-900 text-center font-semibold'>Loading</h2>
-      </div>
+      <header className='pt-24 '>
+        <h2 className='text-4xl text-gray-900 text-center font-semibold'>Loading...</h2>
+        <p className='text-base text-gray-900 text-center'>Fetching Data</p>
+      </header>
     )
   }
 
