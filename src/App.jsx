@@ -30,17 +30,21 @@ const App = () => {
   
   if (users.length === 0) {
     return(
-      <header className='pt-24 '>
-        <h2 className='text-4xl text-gray-900 text-center font-semibold'>Loading...</h2>
-        <p className='text-base text-gray-900 text-center'>Fetching Data</p>
-      </header>
+      <div className="min-h-screen bg-gray-900">
+        <header className='pt-24 '>
+          <h2 className='text-4xl text-gray-200 text-center font-sem. ibold'>Loading...</h2>
+          <p className='text-base text-gray-200 text-center'>Fetching Data</p>
+        </header>
+      </div>
     )
   }
 
   return (
     <>
-    <Header />
-    <Table users={users} />
+    <div className="min-h-screen bg-gray-900">
+      <Header />
+      <Table users={users} />
+    </div>
     </>
   )
 }
